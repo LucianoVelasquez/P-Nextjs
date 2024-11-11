@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
+import ContainerCards from "./container-cards";
 
 export default function Login() {
   return (
@@ -11,21 +12,19 @@ export default function Login() {
           {/* Seccion Principal */}
           <section className="flex flex-col items-start justify-start w-[604] h-full ">
             
-            <div className="flex flex-col ">
+            <div className="flex flex-col ml-2 ">
 
               <div className="h-[58px]">
                 <Image className="m-[-15px]" src="/face.svg" width={220} height={100} alt="clonfacebook"></Image>
               </div>
 
-              <h1 className="text-4xl font-bold text-[#333] mt-2">Recent Logins</h1>
+              <h1 className="text-4xl font-bold text-[#333]">Recent Logins</h1>
               <p className="text-[#606770] text-[15px] mt-2 font-bold">Click your picture or add an account.</p>
 
             </div>
 
-            <div className="flex justify-start items-center gap-x-5  mt-[10px] h-[226px] w-full">
-              <div className="h-[179px] w-[200px] text-center border">card 1</div>
-              <div className="h-[179px] w-[200px] text-center border">card 2</div>
-            </div>
+            {/* Cards */}
+            <ContainerCards></ContainerCards>
 
           </section>
 
